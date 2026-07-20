@@ -31,7 +31,7 @@ console.log('-----------------------------------------');
 
 
 s = 'hello world'
-s1 = s.replace('','')
+s1 = s.replace('','') //s1 = s.replace(searchvalue,replacevalue)
 console.log(s1);
 
 

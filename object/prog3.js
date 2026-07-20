@@ -8,7 +8,7 @@ var car= {
 //w.a.p to print model and manufacturer name of the given car
 console.log(car.model,car.manufacturer);
 
-console.log(`model of the car is ${car['model']} andmanufacturer of the car is ${car.manufacturer}`);
+console.log(`model of the car is ${car['model']} and manufacturer of the car is ${car.manufacturer}`);
 
 
 
