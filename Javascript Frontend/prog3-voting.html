@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voting  Eligibility</title>
+    <!-- bootstrap -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <h2 class="mt-5 text-primary text-center">Voting Eligibility Test</h2>
+            <form class="border rounded mt-5 p-5 shadow">
+                <label >Enter Your Age:</label>
+                <div class="d-flex mt-3 ">
+                   <input id="age" type="text" placeholder="Age" class="form-control">
+                   <button type="button" onclick="check()" class="btn btn-success ms-1">Check</button>
+                </div>
+            <h4 id="elig" class="text-success text-center">Eligible to Vote</h4>
+            <h4 id="not" class="text-danger text-center">Not eligible to Vote</h4>
+            </form>
+           
+        </div>
+      
+        <div class="col-md-4"></div>
+    </div>
+
+    
+    
+    
+</body>
+<script>
+    function check(){
+    /*     console.log(age.value); */
+    if(age.value>=18){
+       /*  alert('Eligible to vote') */
+       
+    }
+    else{
+     /*   alert('Not eligible to vote'); */
+        
+    }
+        
+    }
+</script>
+</html>

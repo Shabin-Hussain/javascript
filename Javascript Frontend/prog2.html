@@ -9,7 +9,7 @@
     <h1>Javascript in frontend</h1>
     <h1 id="dom">DOM</h1>
     <p class="grp1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda rerum accusantium ipsam iste libero? Enim, laudantium eaque deleniti magnam quos similique aliquid ad autem id atque, voluptate, magni ab recusandae.</p>
-    <button>Click</button>
+    <button onclick="change()">Click</button>
     <h1 class="grp1">DOM Model</h1>
 </body>
 
@@ -29,10 +29,18 @@
 
     content.innerHTML='Document Object Model' */
 
-    let content = document.getElementsByClassName('grp1')
+  /*   let content = document.getElementsByClassName('grp1')
     console.log(content);
 
-    content[1].innerHTML= 'Document Object Model'
+    content[1].innerHTML= 'Document Object Model' */
+
+
+    function change(){
+        dom.innerHTML = 'Document Object Model'
+        dom.style.color='red'
+        dom.style.fontSize='75px'
+        dom.style.backgroundColor='yellow'
+    }
     
     
     
