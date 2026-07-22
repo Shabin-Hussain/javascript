@@ -19,8 +19,7 @@
                    <input id="age" type="text" placeholder="Age" class="form-control">
                    <button type="button" onclick="check()" class="btn btn-success ms-1">Check</button>
                 </div>
-            <h4 id="elig" class="text-success text-center">Eligible to Vote</h4>
-            <h4 id="not" class="text-danger text-center">Not eligible to Vote</h4>
+            <p id="value" class="mt-2"></p>
             </form>
            
         </div>
@@ -35,12 +34,26 @@
 <script>
     function check(){
     /*     console.log(age.value); */
+    if(age.value){
     if(age.value>=18){
        /*  alert('Eligible to vote') */
+     value.innerHTML = 'Eligible to vote'
+     value.style.color='green'
        
+    }else if(age.value<18){
+     value.innerHTML = 'Not Eligible to vote'
+     value.style.color='red'
+
     }
     else{
+        value.innerHTML = 'Please enter a valid input' 
+        value.style.color='orange'
+    }
+}
+    else{
      /*   alert('Not eligible to vote'); */
+     value.innerHTML = 'Please fill the form completely'
+     value.style.color='blue'
         
     }
         
